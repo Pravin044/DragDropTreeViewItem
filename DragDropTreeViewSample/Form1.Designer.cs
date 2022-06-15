@@ -48,6 +48,8 @@
             treeNode5,
             treeNode9});
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.btnAddNode = new System.Windows.Forms.Button();
+            this.txtNode = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // treeView1
@@ -83,21 +85,43 @@
             this.treeView1.DragDrop += new System.Windows.Forms.DragEventHandler(this.treeView1_DragDrop);
             this.treeView1.DragEnter += new System.Windows.Forms.DragEventHandler(this.treeView1_DragEnter);
             // 
+            // btnAddNode
+            // 
+            this.btnAddNode.Location = new System.Drawing.Point(563, 163);
+            this.btnAddNode.Name = "btnAddNode";
+            this.btnAddNode.Size = new System.Drawing.Size(102, 23);
+            this.btnAddNode.TabIndex = 1;
+            this.btnAddNode.Text = "Add node";
+            this.btnAddNode.UseVisualStyleBackColor = true;
+            this.btnAddNode.Click += new System.EventHandler(this.btnAddNode_Click);
+            // 
+            // txtNode
+            // 
+            this.txtNode.Location = new System.Drawing.Point(353, 118);
+            this.txtNode.Name = "txtNode";
+            this.txtNode.Size = new System.Drawing.Size(285, 22);
+            this.txtNode.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtNode);
+            this.Controls.Add(this.btnAddNode);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Button btnAddNode;
+        private System.Windows.Forms.TextBox txtNode;
     }
 }
 
